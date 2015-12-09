@@ -55,6 +55,5 @@
 				</li>
 			</cfif>
 		</ul>
-		<BOOTSTRAP:userSidebar />
 	</BOOTSTRAP:navbar>
 </cfif>
