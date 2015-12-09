@@ -1,0 +1,232 @@
+body {
+	-webkit-user-select: none;
+	-moz-user-select: -moz-none;
+	-ms-user-select: none;
+	user-select: none;
+	background: #eee;
+	overflow: hidden;
+}
+
+#dashboard{
+	overflow-y:auto;
+	overflow-x:hidden;
+	height:800px;
+}
+
+.reviewList {
+	border-bottom: 1px #EAE8E8 solid;
+	min-height: 50px;
+}
+
+/**
+ * Styles for the pane elements
+ */
+.panes {
+	min-height:720px;
+}
+
+/**
+ * Label Tag for the top section of the card
+ */
+.cardTag{
+
+	font-size:13pt;
+
+}
+
+
+/**
+ * Inner Tag for the card
+ */
+.innerCardTag{
+	font-size:10pt;
+}
+
+/**
+ * Used to keep the dropdown on the same line as other element
+ */
+.div-inline{
+	display:inline-block;
+	margin-bottom:5px;
+}
+
+/**
+* Prevents elements going outside the divs, will become ellipsis;
+* @type {[type]}
+*/
+.labelText{
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: string;
+	margin-right:5px;
+}
+
+.navbar {
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+	color: #777 !important;
+	background: white !important;
+}
+
+.modal .error {
+	border-top: solid 1px #900;
+	color: #900;
+}
+
+pre {
+	background-color: inherit !important;
+}
+
+.file-X {
+	color: #f00;
+ opacity: 0.3;
+}
+.file-M {
+	color: #009;
+}
+.file-A {
+	color: #090;
+}
+.file-D {
+	color: #900;
+}
+.glyphicon-folder-open {
+	/*color: #E6DD93;*/
+	color: #adadad;
+
+}
+
+.stack_icons {
+	position: relative;
+}
+.stack_icons i {
+	position: absolute;
+		top: 0px;
+		left: 0px;
+}
+
+td {
+	padding-left: 15px;
+	padding-right: 15px;
+}
+.even {
+	background-color: #C0C0C0;
+}
+.uneven {
+	background-color: #EAEAEA;
+}
+
+/**
+ * Loading Overlay
+ */
+.overlay{
+	position:fixed;
+	width: 100%;
+	height:100%;
+
+	top:0;
+	z-index: 100;
+	background: rgb(34,34,34); /* for IE */
+	background: rgba(34,34,34,0.30);
+}
+.innerContainer{
+		margin-left:0px;
+	margin-top:-25px;
+	z-index:100;
+	position:relative;
+	left:50%;
+	top:50%
+	}
+
+
+.commitFileButton{
+	margin:5px;
+	width:100%;
+	text-transform: inherit;
+	text-align: left;
+	color:#777;
+}
+
+
+#reviewBody{
+	overflow:hidden;
+	overflow-y:hidden !important;
+}
+
+#myReviewsContainer, #stats, #dashboard{
+	padding:30px;
+	padding-top:0;
+}
+
+.table > tbody > tr {
+	border:none;
+}
+.table > tbody > tr > th {
+	background: -webkit-linear-gradient(90deg, #4CB8C4 10%, #3CD3AD 90%); /* Chrome 10+, Saf5.1+ */
+	background:	-moz-linear-gradient(90deg, #4CB8C4 10%, #3CD3AD 90%); /* FF3.6+ */
+	background:	-ms-linear-gradient(90deg, #4CB8C4 10%, #3CD3AD 90%); /* IE10 */
+	background:	-o-linear-gradient(90deg, #4CB8C4 10%, #3CD3AD 90%); /* Opera 11.10+ */
+	background:	linear-gradient(90deg, #4CB8C4 10%, #3CD3AD 90%); /* W3C */
+	color: white;
+	font-size:20px;
+	padding:10px;
+}
+
+.header{
+	color:#5265A2;
+	font-weight:normal;
+	letter-spacing:1.2px;
+}
+
+.reviewButtons{
+	color:#777;
+}
+
+.mainPane{
+	overflow:auto;
+	height:800px;
+}
+
+.mainPane.mainPane-left{
+	float:left;
+}
+
+.mainPane.mainPane-left{
+	float:right;
+}
+
+/**
+ * Commit Styles
+ */
+pre.commitPre{
+	 padding: 10px;
+}
+
+#resizeableOppositeContainer{
+	padding:0;
+}
+
+#resizeableCommitSelectContainer{
+	padding:0;
+}
+
+#commitResize{
+	width:3px;
+	height:100%;
+	position:fixed;
+	overflow:hidden;
+	cursor:e-resize;
+}
+
+#commitSelectContainer{
+	margin-left:10px;
+	padding:15px;
+	overflow:auto;
+}
+
+#jstreeContainer{
+	margin-top:10px;
+}
+
+#bodyContainer{
+	margin-right:6px;
+}

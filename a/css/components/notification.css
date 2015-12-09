@@ -1,0 +1,109 @@
+/* $Id: notification.css 23407 2015-12-01 19:43:52Z llee $ */
+
+@-webkit-keyframes pulse {
+	from { background-color: #3CD3AD ; -webkit-box-shadow: 0 0 9px #a4ead9; }
+	50% { background-color: #4CB8C4; -webkit-box-shadow: 0 0 18px #4CB8C4; }
+	to { background-color: #3CD3AD ; -webkit-box-shadow: 0 0 9px #a4ead9; }
+}
+@-moz-keyframes pulse {
+	from { background-color: #3CD3AD ; box-shadow: 0 0 9px #a4ead9; }
+	50% { background-color: #4CB8C4; box-shadow: 0 0 18px #4CB8C4; }
+	to { background-color: #3CD3AD ; box-shadow: 0 0 9px #a4ead9; }
+
+}
+.hq-notification {
+	bottom: 0;
+	right: .5em;
+	position: fixed;
+	width: 90px;
+	width: 316px;
+	height: 30px;
+	z-index: 100 !important;
+	font-family: "Helvetica Neue", Helvetica;
+	font-size: 1em;
+	font-weight: 300;
+	padding: 4px;
+	margin: 20px;
+	border-radius: 4px;
+	box-shadow: 0 1px 17px rgba(0, 0, 0, 0.1), 0 1px 4px rgba(0, 0, 0, 0.05);
+	box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1), 0 1px 4px rgba(0, 0, 0, 0.05), inset 0 1px 0 white;
+	background: rgba(249, 249, 249, 0.95);
+	border: 1px solid #ddd;
+	/*border-left: 4px solid #004d7e;*/
+	-webkit-transition: all .25s ease;
+	-moz-transition: all .25s ease;
+	transition: all .25s ease;
+}
+.hq-notification h2 {
+	font-size: 1em;
+	margin: 0;
+	margin-top: .5em;
+	margin-left: 10px;
+	color: #111;
+	display: block;
+}
+.hq-notification small {
+	font-size: .8em;
+	margin-left: 10px;
+	margin-top: .375em;
+	background: transparent;
+	width: 62.5%;
+	white-space: wrap;
+	line-height: 1.375 !important;
+	display: block;
+}
+.hq-notification span {
+	position: absolute;
+	left: 10px;
+	top: 0px;
+	width: 40px;
+	height: 40px;
+	font-size: 28px;
+	text-align: center;
+	line-height: 2.5;
+	vertical-align: middle;
+	border: none;
+}
+.hq-notification_remove-notification {
+	-webkit-transform: translateX(500px);
+	-moz-transform: translateX(500px);
+	transform: translateX(500px);
+	opacity: 0;
+}
+.hq-notification_awaiting-translation-into-view {
+	-webkit-transform: translateY(29px) translateX(29px) !important;
+	-moz-transform: translateY(29px) translateX(29px) !important;
+	transform: translateY(29px) translateX(29px) !important;
+	opacity: 0 !important;
+}
+
+.hq-notification-message{
+	width:230px;
+	float:left;
+}
+
+.dismiss-notification{
+	box-shadow: none !important;
+}
+.hq-notification-button-group{
+	float:right;
+	width:56px;
+	height:56px;
+}
+.notification-container{
+	width:auto;
+	float:right;
+}
+.lightning{
+	margin-left:-5px;
+	margin-top:-5px;
+	width:10px;
+	height:70px;
+	float:left;
+	-webkit-animation-name: pulse;
+	-webkit-animation-duration: 1s;
+	-webkit-animation-iteration-count: infinite;
+	-moz-animation-name: pulse;
+	-moz-animation-duration: 1s;
+	-moz-animation-iteration-count: infinite;
+}

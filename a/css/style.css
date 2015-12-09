@@ -1,0 +1,176 @@
+/* $Id: style.css 23613 2015-12-08 19:37:45Z llee $ */
+
+body { padding-top: 70px; background: #eee; }
+
+.navbar {
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+	color: #777 !important;
+	background: white !important;
+}
+
+.appHeader {
+	margin-top: 2em;
+	margin-bottom: .5em;
+	text-align: center;
+	border-bottom: 2px solid #333;
+}
+
+.appContainer {
+		height: 30vw;
+		width: 30vw;
+	/*border: solid 3px #666;*/
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 5px;
+	background-size: cover;
+	background-image: url('/a/img/app.png');
+	background-size:100% 100%;
+}
+
+.appContainer>.appName {
+	position: absolute;
+	bottom: 0px;
+	text-align: center;
+	width: 100%;
+	box-shadow: inset 0 -20px 80px -20px #000000;
+	/*background-color:rgba(256, 256, 256, 0.8);*/
+	font-size: 2em;
+}
+
+.lock{
+	padding-top: 15px;
+}
+
+@media (min-width: 768px){
+	.appContainer {
+		height: 22vw;
+		width: 22vw;
+	}
+
+	.appContainer>.appName {
+		font-size: 1.6em;
+	}
+}
+@media (min-width: 992px){
+	.appContainer {
+		height: 14vw;
+		width: 14vw;
+	}
+
+	.appContainer>.appName {
+		font-size: 1.3em;
+	}
+}
+@media (min-width: 1200px){
+	.appContainer {
+		height: 7vw;
+		width: 7vw;
+	}
+	.appContainer>.appName {
+		font-size: 1em;
+	}
+}
+
+/**
+ * BootStrap Dashboard Styles
+ */
+.menuButton {
+	font-family: 'PT Sans', arial, serif;
+	color:#ffffff;
+	text-align:center;
+
+	-webkit-border-radius: 0px;
+	-moz-border-radius: 0px;
+	border-radius: 0px;
+
+	background-color: rgba(0,0,0,0.25);
+
+	margin:10px;
+	float:left;
+	display: inline-block;
+	text-decoration: none;
+}
+
+.appGroup, .loginContainer{
+	background:white;
+	/*padding:10px;*/
+	margin:10px;
+	margin-bottom:20px;
+}
+
+.header{
+	color:#5265A2;
+	font-weight:normal;
+	letter-spacing:1.2px
+}
+
+/**
+ * Login Styles
+ */
+.spacer{
+	height:50px;
+	width:100%;
+}
+
+.loginAlert{
+	margin-bottom:0;
+}
+
+.coloredHeader{
+	background:	-webkit-linear-gradient(90deg, #4CB8C4 10%, #3CD3AD 90%); /* Chrome 10+, Saf5.1+ */
+	background:	-moz-linear-gradient(90deg, #4CB8C4 10%, #3CD3AD 90%); /* FF3.6+ */
+	background:	-ms-linear-gradient(90deg, #4CB8C4 10%, #3CD3AD 90%); /* IE10 */
+	background:	-o-linear-gradient(90deg, #4CB8C4 10%, #3CD3AD 90%); /* Opera 11.10+ */
+	background:	linear-gradient(90deg, #4CB8C4 10%, #3CD3AD 90%); /* W3C */
+	color: white;
+	margin-top:-20px;
+}
+
+
+.colorHint{
+	font-weight:bold;
+	color: #4CB8C4;
+	font-size:15px;
+}
+
+.login.header{
+	padding:20px;
+	color:white
+}
+
+/**
+ * Modal Styles
+ */
+
+.modal-top{
+	width:100%;
+	height:15px;
+background: #A94442
+}
+
+.modal-header{
+	padding:20px !important;
+}
+
+.modal-header > .close{
+	padding-top:4px;
+}
+
+.modal-header > .close > span {
+	font-size: 30px;
+}
+
+.customWarning {
+	background:#f44336 !important;
+	color:white !important;
+}
+
+.customInfo {
+	background:#03a9f4 !important;
+	color:white !important;
+}
+
+.nav-dropdown-label{
+	font-size:18px;
+}

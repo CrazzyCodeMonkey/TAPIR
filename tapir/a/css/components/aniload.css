@@ -1,0 +1,102 @@
+/**
+	*
+	* Loading Animation, uses the color scheme of add, updated, deleted
+	*/
+@-moz-keyframes circles-loaders {
+	0% {
+		-moz-transform: rotate(-720deg);
+		transform: rotate(-720deg);
+	}
+	50% {
+		-moz-transform: rotate(720deg);
+		transform: rotate(720deg);
+	}
+}
+
+@-webkit-keyframes circles-loaders {
+	0% {
+		-webkit-transform: rotate(-720deg);
+		transform: rotate(-720deg);
+	}
+	50% {
+		-webkit-transform: rotate(720deg);
+		transform: rotate(720deg);
+	}
+}
+
+@keyframes circles-loader {
+	0% {
+		-moz-transform: rotate(-720deg);
+		-ms-transform: rotate(-720deg);
+		-webkit-transform: rotate(-720deg);
+		transform: rotate(-720deg);
+	}
+	50% {
+		background-color: #3CD3AD ;
+		-moz-transform: rotate(720deg);
+		-ms-transform: rotate(720deg);
+		-webkit-transform: rotate(720deg);
+		transform: rotate(720deg);
+	}
+}
+
+@keyframes circles-loaders {
+	0% {
+	}
+	50% {
+		background-color: #3CD3AD ;
+	}
+}
+
+.circles-loader:not(:required) {
+	position: relative;
+	text-indent: -9999px;
+	display: inline-block;
+	width: 25px;
+	height: 25px;
+	background: rgba(244, 67, 54, 1);
+	border-radius: 100%;
+	-moz-animation: circles-loader 3s infinite ease-in-out;
+	-webkit-animation: circles-loader 3s infinite ease-in-out;
+	animation: circles-loader 3s infinite ease-in-out;
+	-moz-transform-origin: 50% 100%;
+	-ms-transform-origin: 50% 100%;
+	-webkit-transform-origin: 50% 100%;
+	transform-origin: 50% 100%;
+}
+
+.circles-loader:not(:required)::before {
+	background: rgba(33, 150, 243, 1);
+	border-radius: 100%;
+	content: '';
+	position: absolute;
+	width: 25px;
+	height: 25px;
+	top: 18.75px;
+	left: -10.82532px;
+		-moz-animation: circles-loaders 3s infinite ease-in-out;
+	-webkit-animation: circles-loaders 3s infinite ease-in-out;
+	animation: circles-loaders 3s infinite ease-in-out;
+	-moz-transform-origin: 50% 100%;
+	-ms-transform-origin: 50% 100%;
+	-webkit-transform-origin: 50% 100%;
+	transform-origin: 50% 100%;
+}
+
+.circles-loader:not(:required)::after {
+	background: rgba(76, 175, 80, 1);
+	border-radius: 100%;
+	content: '';
+	position: absolute;
+	width: 25px;
+	height: 25px;
+	top: 18.75px;
+	left: 10.82532px;
+		-moz-animation: circles-loaders 3s infinite ease-in-out;
+	-webkit-animation: circles-loaders 3s infinite ease-in-out;
+	animation: circles-loaders 3s infinite ease-in-out;
+	-moz-transform-origin: 50% 100%;
+	-ms-transform-origin: 50% 100%;
+	-webkit-transform-origin: 50% 100%;
+	transform-origin: 50% 100%;
+}

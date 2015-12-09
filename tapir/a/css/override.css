@@ -1,0 +1,38 @@
+/**
+ * CSS Used to override vendor and global styles
+ */
+
+.hljs {
+	background: inherit !important;
+	padding:inherit !important;
+	display: inherit;
+}
+
+.displaymScanComment {
+	/*background-color: #87D7CF !important;*/
+}
+
+.btn-arrows.pressed,
+.btn-arrows.pressed:hover,
+.btn-arrows.pressed:active,
+.btn-arrows.pressed:visited,
+.btn-arrows.pressed:focus {
+	background: #2b7982 !important;
+
+/*-webkit-box-shadow: inset 9px 0px 12px 0px rgba(50, 50, 50, 0.75) !important;
+-moz-box-shadow:    inset 9px 0px 12px 0px rgba(50, 50, 50, 0.75) !important;
+box-shadow:         inset 9px 0px 12px 0px rgba(50, 50, 50, 0.75) !important;*/
+}
+
+.btn-arrows,
+.btn-arrows:hover,
+.btn-arrows:active,
+.btn-arrows:visited,
+.btn-arrows:focus {
+    background-color: #4CB8C4 !important;
+    border-color: #4CB8C4 !important;
+    color: white !important;
+}
+
+/*#BB133E*/
+

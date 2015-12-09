@@ -1,0 +1,308 @@
+pre.commentPre{
+	width:100% !important;
+	height:100% !important;
+	 padding: 0;
+	 margin: 0;
+	 border: 0;
+	 border-radius: 0;
+	 font-family: inherit;
+	 font-weight:300;
+}
+
+div.panel.panel-info.commentContainer > div.panel-heading, div.panel.panel-info.displayComment > div.panel-heading{
+
+	background:	-webkit-linear-gradient(90deg, #4CB8C4 10%, #3CD3AD 90%); /* Chrome 10+, Saf5.1+ */
+	background:	-moz-linear-gradient(90deg, #4CB8C4 10%, #3CD3AD 90%); /* FF3.6+ */
+	background:	-ms-linear-gradient(90deg, #4CB8C4 10%, #3CD3AD 90%); /* IE10 */
+	background:	-o-linear-gradient(90deg, #4CB8C4 10%, #3CD3AD 90%); /* Opera 11.10+ */
+	background:	linear-gradient(90deg, #4CB8C4 10%, #3CD3AD 90%); /* W3C */
+
+}
+
+
+div.panel-heading, div.panel.panel-info.displaymScanComment > div.panel-heading {
+
+	background:	-webkit-linear-gradient(90deg, #DD5E89 10%, #F7BB97 90%); /* Chrome 10+, Saf5.1+ */
+	background:	-moz-linear-gradient(90deg, #DD5E89 10%, #F7BB97 90%); /* FF3.6+ */
+	background:			-ms-linear-gradient(90deg, #DD5E89 10%, #F7BB97 90%); /* IE10 */
+	background:	-o-linear-gradient(90deg, #DD5E89 10%, #F7BB97 90%); /* Opera 11.10+ */
+	background:	linear-gradient(90deg, #DD5E89 10%, #F7BB97 90%); /* W3C */
+}
+
+
+
+.marked, .highlighted{
+	background:#b4eee0 !important;
+	color:#777 !important;
+}
+
+.mlighted{
+	background:#fac9b8 !important;
+	color:#777 !important;
+}
+
+.panel >.panel-heading{
+	height:3px !important;
+	overflow:hidden !important;
+}
+
+.panel >.panel-body{
+	padding:10px;
+}
+.btn-arrow-right
+.btn-arrow-right{}
+.sourceCode {
+	list-style: none;
+	padding-left: 0px;
+}
+.wp {
+	color:#999;
+}
+.sourceCode li {
+	border-bottom: solid 1px #DCDCDC;
+}
+.sourceCode li .line {
+	float:left;
+	width: 5em;
+	margin-right: 5px;
+}
+.sourceCode li pre {
+	margin: 0px;
+	line-height: 20px;
+	min-height: 20px;
+}
+.sourceCode li .ribbonContainer{
+	float: right;
+}
+.sourceCode li .ribbonContainer .note {
+		white-space: nowrap;
+}
+
+.sourceCode li .olderUpdates{
+	color:#999;
+}
+
+.revLine {
+	position: relative;
+}
+
+.noStyle{
+	background:white !important;
+}
+
+.revRibbonContainer {
+	float:right;
+	display: block;
+	height:20px;
+	width: 20px;
+	padding-right: 1px;
+}
+.revRibbonContainer .revRibbon {
+	position: relative;
+}
+.revRibbonContainer .revRibbon .revHeader {
+	display: none;
+	text-align: center;
+}
+.revRibbonContainer .revRibbon .revNote {
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	display: none;
+	white-space: nowrap;
+	padding: .1px 5px;
+}
+.revRibbonContainer .revRibbon:after {
+	position: absolute;
+	content: "";
+	display: block;
+	top:0px;
+	left:0px;
+	height: 5px;
+	width: 0px;
+	border-right: 10px solid black;
+	border-left: 10px solid black;
+	border-bottom: 15px solid transparent;
+}
+.revRibbonContainer:hover .revRibbon .revHeader {
+	width: 20px;
+	height: 20px;
+	display: block;
+	font-size: 1em;
+	background-color: black;
+}
+.revRibbonContainer:hover .revRibbon:after {
+	display: none;
+}
+.revRibbonContainer:hover .revRibbon .revNote {
+	display: inline;
+	background-color: black;
+	z-index: 20;
+}
+.revRibbonContainer .revRibbon .revNote pre {
+	padding: 0px;
+	margin: 0px;
+}
+.revRibbonContainer:hover .revRibbon .revNote i:first-child {
+	position: absolute;
+	content: "";
+	display: block;
+	top:0px;
+	left:-20px;
+	height: 0px;
+	width: 0px;
+	border-top: 10px solid black;
+	border-bottom: 10px solid black;
+	border-left: 20px solid transparent;
+	z-index: 20;
+}
+.revRibbonContainer:hover .revRibbon .revNote i:last-child {
+	position: absolute;
+	content: "";
+	display: block;
+	top:0px;
+	right:-20px;
+	height: 0px;
+	width: 0px;
+	border-bottom: 20px solid transparent;
+	border-left: 20px solid black;
+	z-index: 20;
+}
+
+.revRibbonContainer.Updated .revRibbon:after {
+	border-right-color: #33f;
+	border-left-color: #33f;
+}
+.revRibbonContainer.Updated:hover .revRibbon .revHeader{
+	background-color: #33f;
+}
+.revRibbonContainer.Updated:hover .revRibbon .revNote {
+	background-color: #33f;
+}
+.revRibbonContainer.Updated:hover .revRibbon .revNote i:first-child {
+	border-top-color: #33f;
+	border-bottom-color: #33f;
+}
+.revRibbonContainer.Updated:hover .revRibbon .revNote i:last-child {
+	border-left-color: #33f;
+}
+
+.revRibbonContainer.Added .revRibbon:after {
+	border-right-color: #3f3;
+	border-left-color: #3f3;
+}
+.revRibbonContainer.Added:hover .revRibbon .revHeader {
+	background-color: #3f3;
+}
+.revRibbonContainer.Added:hover .revRibbon .revNote {
+	background-color: #3f3;
+}
+.revRibbonContainer.Added:hover .revRibbon .revNote i:first-child {
+	border-top-color: #3f3;
+	border-bottom-color: #3f3;
+}
+.revRibbonContainer.Added:hover .revRibbon .revNote i:last-child {
+	border-left-color: #3f3;
+}
+
+
+.revRibbonContainer.Removed .revRibbon:after {
+	border-right-color: #f33;
+	border-left-color: #f33;
+}
+.revRibbonContainer.Removed:hover .revRibbon .revHeader {
+	background-color: #f33;
+}
+.revRibbonContainer.Removed:hover .revRibbon .revNote {
+	background-color: #f33;
+}
+.revRibbonContainer.Removed:hover .revRibbon .revNote i:first-child {
+	border-top-color: #f33;
+	border-bottom-color: #f33;
+}
+.revRibbonContainer.Removed:hover .revRibbon .revNote i:last-child {
+	border-left-color: #f33;
+}
+
+.Updated:hover {
+	cursor:pointer;
+}
+
+.Pristine:hover{
+	cursor:pointer;
+}
+
+.Removed:hover{
+	cursor:no-drop;
+}
+
+.Added:hover{
+	cursor:pointer;
+}
+
+.Updated {
+	background-color: #cfe8fc;
+}
+.Added {
+	background-color: #dcefdc;
+}
+.Removed {
+	background-color: #fcd2cf;
+}
+
+.editorFlagIcons{
+	width:20px !important;
+	height:20px !important;
+	padding:0 !important;
+	margin:0;
+	font-size:inherit !important;
+	float:right;
+}
+
+/**
+ * Overwrites bootstrap Pre styling
+ */
+pre {
+	-webkit-user-select: none;
+	-moz-user-select: -moz-none;
+	-ms-user-select: none;
+	user-select: none;
+
+	display: inherit;
+	padding: 0;
+	margin: 0;
+	font-size: 13px;
+	line-height: inherit;
+	word-break: break-all;
+	word-wrap: break-word;
+	color: #333;
+	background-color: white;
+	border: 0;
+	border-radius: 0;
+}
+
+/**
+ * Styles for the file browser suffix icons
+ */
+.manualCount{
+	font-weight:bold;
+	color: #4CB8C4 !important;
+}
+
+.automatedCount{
+	font-weight:bold;
+	color: #DD5E89 !important;
+}
+
+.smallDivider{
+	font-weight:bold;
+	color:black;
+	width:5px;
+	height:100%;
+}
+
+.tree-icon{
+		float:inherit !important;
+}
+
+

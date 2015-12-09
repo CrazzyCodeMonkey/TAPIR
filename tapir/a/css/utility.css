@@ -1,0 +1,27 @@
+.notVisible {
+	visibility: hidden !important;
+}
+
+.blurred{
+  -webkit-filter: blur(5px);
+  -webkit-transform: translate3d(0, 0, 0);
+	-moz-filter: blur(5px);
+	-o-filter: blur(5px);
+	-ms-filter: blur(5px);
+filter: url(#effect-blur-1);
+filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'effect-blur-1\'><feGaussianBlur stdDeviation=\'2\' /></filter></svg>#effect-blur-1");
+
+}
+
+.mini{
+	height:5px !important;
+	overflow:hidden !important;
+}
+
+.hidden{
+	display:none !important;
+}
+
+.hand{
+	cursor:pointer;
+}

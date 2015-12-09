@@ -1,0 +1,137 @@
+body {
+  -webkit-user-select: none;
+     -moz-user-select: -moz-none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+/**
+ * Styles for the pane elements
+ */
+.panes {
+	min-height:720px;
+}
+
+/**
+ * Label Tag for the top section of the card
+ */
+.cardTag{
+
+	font-size:15pt;
+
+}
+
+
+/**
+ * Inner Tag for the card
+ */
+.innerCardTag{
+	font-size:10pt;
+}
+
+/**
+ * Used to keep the dropdown on the same line as other element
+ */
+.div-inline{
+    display:inline-block;
+    margin-bottom:5px;
+}
+
+/**
+* Prevents elements going outside the divs, will become ellipsis;
+* @type {[type]}
+*/
+.labelText{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/**
+ * Slider Styles
+ */
+.cd-panel {
+
+	/*...*/
+  	visibility: hidden;
+	transition: visibility 0s 0.6s;
+}
+
+.cd-panel.is-visible {
+
+	visibility: visible;
+	transition: visibility 0s 0s;
+}
+
+.cd-panel-header {
+	/*...*/
+	position: fixed;
+	top: -50px;
+	width: 75%;
+	height: 50px;
+	transition: top 0.3s 0s;
+}
+
+.is-visible .cd-panel-header {
+	top: 0;
+	transition: top 0.3s 0.3s;
+}
+
+.cd-panel-container {
+	overflow-y:scroll;
+	background:white;
+	/*...*/
+	position: fixed;
+	width: 75%;
+	height: 100%;
+	top: 0;
+	right: 0;
+
+	transition-property: transform;
+	transition-duration: 0.3s;
+	transition-delay: 0.3s;
+
+ 	transform: translate3d(100%, 0, 0);
+}
+
+.is-visible .cd-panel-container {
+	transform: translate3d(0, 0, 0);
+	transition-delay: 0s;
+}
+
+body { padding-top: 70px; background: #eee; }
+
+
+.navbar {
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  color: #777 !important;
+  background: white !important;
+}
+
+.modal .error {
+	border-top: solid 1px #900;
+	color: #900;
+}
+
+pre {
+  background-color: inherit !important;
+}
+
+.file-X {
+	color: #f00;
+ opacity: 0.3;
+}
+.file-M {
+	color: #009;
+}
+.file-A {
+	color: #090;
+}
+.file-D {
+	color: #900;
+}
+.glyphicon-folder-open {
+	/*color: #E6DD93;*/
+	color: #C4BB71;
+
+}
