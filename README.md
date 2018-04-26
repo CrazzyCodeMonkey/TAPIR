@@ -7,7 +7,7 @@ TAPIR is a tool designed to help make code reviews easier, and remove the tediou
 Trace Sinclair (CrazzyCodeMonkey)
 
 #### Supporting developers ####
-* Marcus Ferndstrum (MFernstrom)
+* Marcus Fernstrom (https://github.com/MFernstrom/)
 * Lucas Lee
 
 ### Dependancies ###
